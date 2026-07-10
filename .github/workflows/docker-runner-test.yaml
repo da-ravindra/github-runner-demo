@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+  Test:
+      runs-on: docker-runner
+
+      steps:
+        - uses: actions/checkout@v4
+
+        - name: Run Security Check
+          run: echo "Test Completed"
+       
+
